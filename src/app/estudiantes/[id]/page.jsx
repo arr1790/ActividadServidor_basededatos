@@ -34,7 +34,7 @@ async function Productos ({id}) {
           Fecha de nacimiento: <span className="font-normal">{new Date(estudiante.fecha_nacimiento).toLocaleDateString()}</span>
         </p>
         <p className="text-lg font-semibold text-gray-800 mb-2">
-          Foto: <span className="font-normal">{estudiante.foto || "No disponible"}</span>
+          Foto: <span className="font-normal"><img src={estudiante.foto} alt={estudiante.nombre} width="100px" /></span>
         </p>
         <p className="text-lg font-semibold text-gray-800">
           Tutor: <span className="font-normal">{estudiante.tutor_legal}</span>

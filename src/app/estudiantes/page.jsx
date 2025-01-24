@@ -36,7 +36,8 @@ async function Productos() {
               <td className="px-4 py-2 border-b text-sm">
                 {new Date(estudiante.fecha_nacimiento).toLocaleDateString()}
               </td>
-              <td className="px-4 py-2 border-b text-sm">{estudiante.foto || "No disponible"}</td>
+              <td className="px-4 py-2 border-b text-sm"><img src={estudiante.foto} alt={estudiante.nombre} width="100px" /></td>
+              
               <td className="px-4 py-2 border-b text-sm">{estudiante.tutor_legal}</td>
             
             </tr>
